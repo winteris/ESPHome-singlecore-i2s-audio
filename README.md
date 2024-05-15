@@ -20,6 +20,7 @@ You can modify the local file every time you want.
 external_components:
 - source: my_components
 
+# Default value if not defined : GPIO1 GPIO18 GPIO0
 media_player:
 - platform: singlecore_i2s_audio
     name: ESPHome I2S Media Player
