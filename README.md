@@ -1,4 +1,4 @@
-# ESPHome I²S Audio Media Player Components for ESP32 single-core chips
+# ESPHome I²S Audio Media Player Component for ESP32 single-core chips
 Similar to the Official Component  [I²S Audio Media Player](https://esphome.io/components/media_player/i2s_audio), this is a [External Component](https://esphome.io/components/external_components.html) made for ESPHome, it can be used to create an ESPHome Audio Media Player in Home Assistant.
 The difference is that the audio library it uses is from [earlephilhower/ESP8266Audio](https://github.com/earlephilhower/ESP8266Audio), which can run on ESP series single-core chip(like ESP8266, ESP32S2, ESP32C3), so it works on my ESP32C3. 
 This component is written separately for the [airm2m_core_esp32c3 ](https://wiki.luatos.com/chips/esp32c3) development board, and you can modify this component yourself to make it work with your own board.
