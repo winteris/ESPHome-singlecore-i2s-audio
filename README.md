@@ -31,7 +31,9 @@ media_player:
 ```
 3. Connect your DAC module to the development board:
 ```
-DAC  <---->    dev board
+DAC  <----> dev board
+vin  <---->   3.3v
+gnd  <---->   gnd
 din  <----> i2s_dout_pin(def GPIO1)
 lrck <----> i2s_lrclk_pin(def GPIO18)
 bck  <----> i2s_bclk_pin(def GPIO0)
