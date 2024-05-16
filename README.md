@@ -4,7 +4,7 @@ The difference is that the audio library it uses is from [earlephilhower/ESP8266
 This component is written separately for the [airm2m_core_esp32c3 ](https://wiki.luatos.com/chips/esp32c3) development board, and you can modify this component yourself to make it work with your own board.
 
   It is able to :
-- Regist an Audio Media Player into HomeAssistant
+- Register an Audio Media Player into HomeAssistant
 - MP3 from URL only
 - HTTP URL only
 
