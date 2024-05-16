@@ -37,6 +37,7 @@ gnd  <---->   gnd
 din  <----> i2s_dout_pin(def GPIO1)
 lrck <----> i2s_lrclk_pin(def GPIO18)
 bck  <----> i2s_bclk_pin(def GPIO0)
+sck  <----> gnd(if i2s_mclk_pin is not used)
 ```
 ![Image](./my_components/IMG_3205.jpeg)
 4. Then you can compile and install your firmware.
