@@ -31,10 +31,10 @@ media_player:
 ```
 3. Connect your DAC module to the development board:
 ```
-      dev board          <----> DAC
-i2s_dout_pin(def GPIO1)  <----> din
-i2s_lrclk_pin(def GPIO18)<----> lrclk
-i2s_bclk_pin(def GPIO18) <----> bclk
+DAC  <---->    dev board
+din  <----> i2s_dout_pin(def GPIO1)
+lrck <----> i2s_lrclk_pin(def GPIO18)
+bck  <----> i2s_bclk_pin(def GPIO0)
 ```
 ![Image](./my_components/IMG_3205.jpeg)
 4. Then you can compile and install your firmware.
