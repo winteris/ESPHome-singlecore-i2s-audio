@@ -29,9 +29,9 @@ media_player:
     i2s_lrclk_pin: GPIO18
     i2s_bclk_pin: GPIO0
 ```
-3. Connect your ADC module to the development board:
+3. Connect your DAC module to the development board:
 ```
-    board     <---->  adc
+dev board     <---->   DAC
 i2s_dout_pin  <---->  GPIO1
 i2s_lrclk_pin <---->  GPIO18
 i2s_bclk_pin  <---->  GPIO0
