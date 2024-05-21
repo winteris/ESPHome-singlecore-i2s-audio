@@ -131,7 +131,8 @@ void I2SAudioMediaPlayer::stopPlaying() {
 void I2SAudioMediaPlayer::playaudio(const char* source)  {
     stopPlaying();
     ESP_LOGCONFIG(TAG, "Start Playing...");
-    this->state == media_player::MEDIA_PLAYER_STATE_PLAYING;
+    this->state = media_player::MEDIA_PLAYER_STATE_PLAYING;
+    this->publish_state();
     file_http = new AudioFileSourceHTTPStream();
     if ( file_http->open(source)) {
         broadcastStatus("playing");
