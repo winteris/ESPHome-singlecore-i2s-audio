@@ -109,5 +109,5 @@ async def to_code(config):
             cg.add(var.set_mute_pin(pin))
         cg.add(var.set_external_dac_channels(2 if config[CONF_MODE] == "stereo" else 1))
 
-    cg.add_library("ESP8266Audio", "master", "https://www.github.com/earlephilhower/ESP8266Audio.git")
+    cg.add_library("ESP8266Audio", "mclk", "https://www.github.com/winteris/ESP8266Audio.git")
     cg.add_platformio_option("lib_ldf_mode", "deep")
