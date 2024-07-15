@@ -10,6 +10,13 @@ esp32:
 external_components:
   - source: my_components
 
+# external_components:
+#   - source:
+#       type: git
+#       url: https://github.com/winteris/ESPHome-singlecore-i2s-audio.git
+#       ref: master
+#       path: my_components
+
 # Default value if not defined : GPIO1 GPIO18 GPIO0
 media_player:
   - platform: singlecore_i2s_audio

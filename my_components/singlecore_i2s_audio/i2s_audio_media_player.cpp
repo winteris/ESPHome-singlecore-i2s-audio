@@ -1,7 +1,7 @@
 #include "i2s_audio_media_player.h"
 
-#define LED1_Pin            12        // external LED1 pin
-#define LED2_Pin            13        // external LED2 pin
+// #define LED1_Pin            12        // external LED1 pin
+// #define LED2_Pin            13        // external LED2 pin
 
 namespace esphome {
 namespace i2s_audio {
@@ -89,8 +89,8 @@ void I2SAudioMediaPlayer::broadcastStatus(const char* msg) {
 }
 
 void I2SAudioMediaPlayer::updateLEDBrightness(int brightness_percentage) {
-  analogWrite(LED1_Pin, (int) brightness_percentage * 255 / 100);
-  analogWrite(LED2_Pin, (int) 10 * 255 / 100);
+  // analogWrite(LED1_Pin, (int) brightness_percentage * 255 / 100);
+  // analogWrite(LED2_Pin, (int) 10 * 255 / 100);
 }
 
 void I2SAudioMediaPlayer::stopPlaying() {
@@ -152,8 +152,8 @@ void I2SAudioMediaPlayer::playaudio(const char* source)  {
 void I2SAudioMediaPlayer::setup() {
   ESP_LOGCONFIG(TAG, "Setting up Audio...");
 
-  pinMode(LED1_Pin, OUTPUT); 
-  pinMode(LED2_Pin, OUTPUT);
+  // pinMode(LED1_Pin, OUTPUT); 
+  // pinMode(LED2_Pin, OUTPUT);
   updateLEDBrightness(0);
 
   out = new AudioOutputI2S();
