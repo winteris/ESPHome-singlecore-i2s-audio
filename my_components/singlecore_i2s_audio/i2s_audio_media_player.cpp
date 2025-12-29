@@ -1,8 +1,5 @@
 #include "i2s_audio_media_player.h"
 
-// #define LED1_Pin            12        // external LED1 pin
-// #define LED2_Pin            13        // external LED2 pin
-
 namespace esphome {
 namespace i2s_audio {
 
@@ -123,7 +120,7 @@ void I2SAudioMediaPlayer::stopPlaying() {
     broadcastStatus("idle");
     this->state = media_player::MEDIA_PLAYER_STATE_IDLE;
     this->publish_state();
-    updateLEDBrightness(0);
+    //updateLEDBrightness(0);
     ESP_LOGCONFIG(TAG, "Stoped and Idle");
 }
 
@@ -136,7 +133,7 @@ void I2SAudioMediaPlayer::playaudio(const char* source)  {
     file_http = new AudioFileSourceHTTPStream();
     if ( file_http->open(source)) {
         broadcastStatus("playing");
-        updateLEDBrightness(10);
+        //updateLEDBrightness(10);
         ESP_LOGCONFIG(TAG, "url:");
         ESP_LOGCONFIG(TAG, source);
         // dim while playing
@@ -154,7 +151,7 @@ void I2SAudioMediaPlayer::setup() {
 
   // pinMode(LED1_Pin, OUTPUT); 
   // pinMode(LED2_Pin, OUTPUT);
-  updateLEDBrightness(0);
+  //updateLEDBrightness(0);
 
   out = new AudioOutputI2S();
   if(mclk_pin_ == 250) {

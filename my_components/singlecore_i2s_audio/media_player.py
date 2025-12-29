@@ -55,7 +55,7 @@ CONFIG_SCHEMA = cv.All(
                     cv.Required(CONF_MODE): cv.enum(INTERNAL_DAC_OPTIONS, lower=True),
                 }
             )
-            .extend(media_player.MEDIA_PLAYER_SCHEMA)
+            .extend(media_player._MEDIA_PLAYER_SCHEMA)
             .extend(cv.COMPONENT_SCHEMA),
             "external": cv.Schema(
                 {
@@ -78,7 +78,7 @@ CONFIG_SCHEMA = cv.All(
                     ),
                 }
             )
-            .extend(media_player.MEDIA_PLAYER_SCHEMA)
+            .extend(media_player._MEDIA_PLAYER_SCHEMA)
             .extend(cv.COMPONENT_SCHEMA),
         },
         key=CONF_DAC_TYPE,
